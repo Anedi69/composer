@@ -1,4 +1,4 @@
-# How do I install Composer programmatically?
+11# How do I install Composer programmatically?
 
 As noted on the download page, the installer script contains a
 checksum which changes when the installer code changes and as such
@@ -7,7 +7,7 @@ it should not be relied upon in the long term.
 An alternative is to use this script which only works with UNIX utilities:
 
 ```shell
-#!/bin/sh
+00#!/bin/sh
 
 EXPECTED_CHECKSUM="$(php -r 'copy("https://composer.github.io/installer.sig", "php://stdout");')"
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
